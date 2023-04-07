@@ -1,0 +1,1589 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='banking_customer_churn (banking)' inline='true' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='127.0.0.1' name='mysql.17qaanw1stbal318fp5ac0fxqckf'>
+            <connection class='mysql' dbname='banking' odbc-native-protocol='' one-time-sql='' port='3306' server='127.0.0.1' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='mysql.17qaanw1stbal318fp5ac0fxqckf' name='banking_customer_churn' table='[banking_customer_churn]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='mysql.17qaanw1stbal318fp5ac0fxqckf' name='banking_customer_churn' table='[banking_customer_churn]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>customer_id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[customer_id]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>customer_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>credit_score</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[credit_score]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>credit_score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>800</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>800</width>
+            <contains-null>true</contains-null>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[tenure]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>tenure</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balance</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[balance]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>balance</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>6</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_REAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_FLOAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>products_number</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[products_number]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>products_number</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>credit_card</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[credit_card]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>credit_card</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>active_member</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[active_member]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>active_member</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>estimated_salary</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[estimated_salary]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>estimated_salary</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>6</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_REAL&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_FLOAT&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>churn</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[churn]</local-name>
+            <parent-name>[banking_customer_churn]</parent-name>
+            <remote-alias>churn</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='banking_customer_churn' datatype='table' name='[__tableau_internal_object_id__].[banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7]' role='measure' type='quantitative' />
+      <column caption='Active Member' datatype='integer' name='[active_member]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+      <column caption='Balance' datatype='real' name='[balance]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Churn' datatype='integer' name='[churn]' role='dimension' type='ordinal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Credit Card' datatype='integer' name='[credit_card]' role='measure' type='quantitative' />
+      <column caption='Credit Score' datatype='integer' name='[credit_score]' role='measure' type='quantitative' />
+      <column caption='Customer Id' datatype='integer' name='[customer_id]' role='dimension' type='ordinal' />
+      <column caption='Estimated Salary' datatype='real' name='[estimated_salary]' role='measure' type='quantitative' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Products Number' datatype='integer' name='[products_number]' role='dimension' type='ordinal' />
+      <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+      <column-instance column='[age]' derivation='Avg' name='[avg:age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[balance]' derivation='Avg' name='[avg:balance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[credit_score]' derivation='Avg' name='[avg:credit_score:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[gender]' derivation='Count' name='[cnt:gender:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:age:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:credit_score:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:balance:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.00bnwow1cl4n5114h8pt70pfs5mb].[cnt:gender:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='banking_customer_churn' id='banking_customer_churn_DDE34FF5E17240BA9EFA14D7EAD2B7D7'>
+            <properties context=''>
+              <relation connection='mysql.17qaanw1stbal318fp5ac0fxqckf' name='banking_customer_churn' table='[banking_customer_churn]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Average credit score with average age and gender distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Average credit score with average age and gender distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='Avg' name='[avg:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[credit_score]' derivation='Avg' name='[avg:credit_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Credit Score' datatype='integer' name='[credit_score]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk]' direction='DESC' using='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:age:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:age:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:credit_score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols>([federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:age:qk] + [federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:credit_score:qk])</cols>
+      </table>
+      <simple-id uuid='{B7AEACB9-068A-44A8-86C3-180EE0DCCB95}' />
+    </worksheet>
+    <worksheet name='Churn Ratio per country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Churn Ratio per country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column aggregation='Sum' caption='Churn' datatype='integer' name='[churn]' role='dimension' type='ordinal' />
+            <column-instance column='[churn]' derivation='Count' name='[cnt:churn:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[churn]' derivation='None' name='[none:churn:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk]' />
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[cnt:churn:qk]' />
+              <geometry column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:churn:ok] * [federated.00bnwow1cl4n5114h8pt70pfs5mb].[Latitude (generated)])</rows>
+        <cols>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{053077C6-1BD2-4785-81B3-B3AF9080D581}' />
+    </worksheet>
+    <worksheet name='Churn Ratio per country (chart view)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Churn Ratio per country (chart view)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column aggregation='Sum' caption='Churn' datatype='integer' name='[churn]' role='dimension' type='ordinal' />
+            <column-instance column='[churn]' derivation='Count' name='[cnt:churn:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[churn]' derivation='None' name='[none:churn:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[cnt:churn:qk]</rows>
+        <cols>([federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:churn:ok] / [federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk])</cols>
+      </table>
+      <simple-id uuid='{5DFE68B8-F17D-4FF9-B0ED-96B9F683884B}' />
+    </worksheet>
+    <worksheet name='Country-wise average credut score per gender'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Country-wise average credit score per gender</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column-instance column='[credit_score]' derivation='Avg' name='[avg:credit_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Credit Score' datatype='integer' name='[credit_score]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Longitude (generated)]' field-type='quantitative' max='9806398.4843976721' min='-5603057.4824856352' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Latitude (generated)]' field-type='quantitative' max='7624670.2033518292' min='4252797.9899813142' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk]' />
+              <size column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:credit_score:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='237' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk] * [federated.00bnwow1cl4n5114h8pt70pfs5mb].[Latitude (generated)])</rows>
+        <cols>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{C10B213C-6412-4E72-A028-59B4D8F56FDE}' />
+    </worksheet>
+    <worksheet name='Customer Churn Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Customer Churn Distribution</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column aggregation='Sum' caption='Churn' datatype='integer' name='[churn]' role='dimension' type='ordinal' />
+            <column-instance column='[churn]' derivation='Count' name='[cnt:churn:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[churn]' derivation='None' name='[none:churn:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:churn:ok]' />
+              <wedge-size column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[cnt:churn:qk]' />
+              <size column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[cnt:churn:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9C7A7E2A-E77A-45A1-A970-688C1AD7FC66}' />
+    </worksheet>
+    <worksheet name='Freq distribution for gender wise credit score '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Freq distribution for gender wise credit score </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column caption='Credit Score' datatype='integer' name='[credit_score]' role='measure' type='quantitative' />
+            <column-instance column='[credit_score]' derivation='CountD' name='[ctd:credit_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[tenure]' derivation='None' name='[none:tenure:qk]' pivot='key' type='quantitative' />
+            <column caption='Tenure' datatype='integer' name='[tenure]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[ctd:credit_score:qk]</rows>
+        <cols>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:tenure:qk]</cols>
+      </table>
+      <simple-id uuid='{949971CF-2262-4658-9238-2A7A5A55718E}' />
+    </worksheet>
+    <worksheet name='Gender wise avg. credit score and avg salary distribution per country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Gender wise avg. credit score and avg salary distribution per country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column-instance column='[credit_score]' derivation='Avg' name='[avg:credit_score:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[estimated_salary]' derivation='Avg' name='[avg:estimated_salary:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Credit Score' datatype='integer' name='[credit_score]' role='measure' type='quantitative' />
+            <column caption='Estimated Salary' datatype='real' name='[estimated_salary]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Longitude (generated)]' field-type='quantitative' max='2637012.5551923718' min='-2241217.0930492803' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Latitude (generated)]' field-type='quantitative' max='7710954.6234441642' min='3571116.9556650068' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:estimated_salary:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='normal' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk]' />
+              <size column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:credit_score:qk]' />
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:estimated_salary:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.3513259887695312' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk] * [federated.00bnwow1cl4n5114h8pt70pfs5mb].[Latitude (generated)])</rows>
+        <cols>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{92EA8BA0-274F-4F84-B558-9F8CF521AFAC}' />
+    </worksheet>
+    <worksheet name='Gender-wise estimated avg. salary per country (map view)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Gender-wise estimated avg. salary per country (map view)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column-instance column='[estimated_salary]' derivation='Avg' name='[avg:estimated_salary:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Estimated Salary' datatype='real' name='[estimated_salary]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk]' />
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:estimated_salary:qk]' />
+              <geometry column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk] * [federated.00bnwow1cl4n5114h8pt70pfs5mb].[Latitude (generated)])</rows>
+        <cols>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{83789FB1-1562-43C1-A0B7-B6BE77B5D90B}' />
+    </worksheet>
+    <worksheet name='Gender-wise estimated salary per country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Gender-wise estimated salary per country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Estimated Salary' datatype='real' name='[estimated_salary]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[estimated_salary]' derivation='Sum' name='[sum:estimated_salary:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <lod column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk]' />
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk]' />
+              <wedge-size column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[sum:estimated_salary:qk]' />
+              <size column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[sum:estimated_salary:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Latitude (generated)]</rows>
+        <cols>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{DA4AC7F9-E94D-4C7F-B538-6CA59A2922B7}' />
+    </worksheet>
+    <worksheet name='Gender-wise estimated salary per country (chart distribution)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Gender-wise estimated salary per country (chart distribution)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column-instance column='[estimated_salary]' derivation='Avg' name='[avg:estimated_salary:qk]' pivot='key' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Estimated Salary' datatype='real' name='[estimated_salary]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:estimated_salary:qk]</rows>
+        <cols>([federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk] / [federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk])</cols>
+      </table>
+      <simple-id uuid='{4B4E5C43-BC48-4F56-8A8A-66357B224DCB}' />
+    </worksheet>
+    <worksheet name='Sheet 12'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column-instance column='[balance]' derivation='Avg' name='[avg:balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[credit_score]' derivation='Avg' name='[avg:credit_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Balance' datatype='real' name='[balance]' role='measure' type='quantitative' />
+            <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Credit Score' datatype='integer' name='[credit_score]' role='measure' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[country]' derivation='None' name='[none:country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <lod column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk]' />
+              <size column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:balance:qk]' />
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:credit_score:qk]' />
+              <geometry column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk] * [federated.00bnwow1cl4n5114h8pt70pfs5mb].[Latitude (generated)])</rows>
+        <cols>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{FCDA3C47-777D-4FA4-BBA4-B305842357B4}' />
+    </worksheet>
+    <worksheet name='average age distribution per gender category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Average age distribution per gender category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='banking_customer_churn (banking)' name='federated.00bnwow1cl4n5114h8pt70pfs5mb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00bnwow1cl4n5114h8pt70pfs5mb'>
+            <column caption='Age' datatype='integer' name='[age]' role='measure' type='quantitative' />
+            <column-instance column='[age]' derivation='Avg' name='[avg:age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gender]' derivation='Count' name='[cnt:gender:qk]' pivot='key' type='quantitative' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:age:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.00bnwow1cl4n5114h8pt70pfs5mb].[cnt:gender:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.00bnwow1cl4n5114h8pt70pfs5mb].[cnt:gender:qk]&quot;</bucket>
+              <bucket>&quot;[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:age:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk] / [federated.00bnwow1cl4n5114h8pt70pfs5mb].[:Measure Names])</rows>
+        <cols>[federated.00bnwow1cl4n5114h8pt70pfs5mb].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{20F8A782-EEE2-4BF0-96A7-53DC786FBC61}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Banking Customer Churn Dashboard</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='768' maxwidth='1024' minheight='768' minwidth='1024' preset-index='2' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='11' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='22' param='vert' type-v2='layout-flow' w='100000' x='0' y='0'>
+            <zone h='5339' id='23' type-v2='title' w='100000' x='0' y='0'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='94661' id='14' param='horz' type-v2='layout-flow' w='100000' x='0' y='5339'>
+              <zone h='94661' id='12' type-v2='layout-basic' w='100000' x='0' y='5339' />
+            </zone>
+          </zone>
+        </zone>
+        <zone h='26432' id='3' name='average age distribution per gender category' w='45020' x='293' y='6510' />
+        <zone h='7292' id='8' name='average age distribution per gender category' pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[:Measure Names]' type-v2='color' w='14063' x='84668' y='8594' />
+        <zone h='51750' id='9' name='Country-wise average credut score per gender' w='98800' x='300' y='33250'>
+          <layout-cache minheight='464' type-h='scalable' type-w='fixed' />
+        </zone>
+        <zone h='27083' id='10' name='Customer Churn Distribution' w='32520' x='45996' y='6641' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1'>Banking Customer Churn Dashboard</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='37' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='36' param='vert' type-v2='layout-flow' w='98438' x='781' y='1042'>
+                <zone h='5339' id='23' type-v2='title' w='100000' x='0' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='203' h='26432' id='3' is-fixed='true' name='average age distribution per gender category' w='45020' x='293' y='6510'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7292' id='8' name='average age distribution per gender category' pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[:Measure Names]' type-v2='color' w='14063' x='84668' y='8594'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='208' h='27083' id='10' is-fixed='true' name='Customer Churn Distribution' w='32520' x='45996' y='6641'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='51750' id='9' is-fixed='true' name='Country-wise average credut score per gender' w='98800' x='300' y='33250'>
+                  <layout-cache minheight='464' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8E2FC7FA-67D4-4ADE-ADF6-F080D8D69CD6}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='11' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='7250' id='8' name='Freq distribution for gender wise credit score ' pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk]' type-v2='color' w='14000' x='84400' y='3625' />
+        <zone h='32250' id='3' name='Freq distribution for gender wise credit score ' w='35400' x='62900' y='43625' />
+        <zone h='79250' id='9' name='Gender wise avg. credit score and avg salary distribution per country' w='58700' x='3300' y='4125' />
+        <zone h='9500' id='12' name='Gender wise avg. credit score and avg salary distribution per country' pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:estimated_salary:qk]' type-v2='color' w='14000' x='82900' y='12875' />
+        <zone h='14750' id='13' name='Gender wise avg. credit score and avg salary distribution per country' pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:credit_score:qk]' type-v2='size' w='14000' x='84800' y='21500' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='30' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='79250' id='9' is-fixed='true' name='Gender wise avg. credit score and avg salary distribution per country' w='58700' x='3300' y='4125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9500' id='12' name='Gender wise avg. credit score and avg salary distribution per country' pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:estimated_salary:qk]' type-v2='color' w='14000' x='82900' y='12875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14750' id='13' name='Gender wise avg. credit score and avg salary distribution per country' pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:credit_score:qk]' type-v2='size' w='14000' x='84800' y='21500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='258' h='32250' id='3' is-fixed='true' name='Freq distribution for gender wise credit score ' w='35400' x='62900' y='43625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7250' id='8' name='Freq distribution for gender wise credit score ' pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk]' type-v2='color' w='14000' x='84400' y='3625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{19087ECB-086A-479C-93C5-A46BA2089EA0}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='49200' x='800' y='1000'>
+              <zone h='98000' id='3' name='Churn Ratio per country' w='49200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='492' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='49200' x='50000' y='1000'>
+              <zone h='98000' id='9' name='Gender wise avg. credit score and avg salary distribution per country' w='49200' x='50000' y='1000'>
+                <layout-cache minheight='492' minwidth='282' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Churn Ratio per country' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='9' is-fixed='true' name='Gender wise avg. credit score and avg salary distribution per country' w='49200' x='50000' y='1000'>
+                  <layout-cache minheight='492' minwidth='282' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7F61AD51-AEDE-4DB8-A0F2-F29543E891D0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='average age distribution per gender category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{6F062A9E-BAB4-4A46-9022-F9F9DDC5503D}' />
+    </window>
+    <window class='worksheet' name='Average credit score with average age and gender distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{274A1A3D-1917-416D-9711-43234292A914}' />
+    </window>
+    <window class='worksheet' name='Country-wise average credut score per gender'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:credit_score:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='1' />
+      </viewpoint>
+      <simple-id uuid='{AC0C78FB-C624-452F-9CB1-6011AF7090AC}' />
+    </window>
+    <window class='worksheet' name='Customer Churn Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:churn:ok]' type='color' />
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[cnt:churn:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9C8AE6D0-283D-498A-BE19-D29B5B95F750}' />
+    </window>
+    <window class='worksheet' name='Churn Ratio per country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[cnt:churn:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7199FE7F-718A-4AAE-8BF2-9970EBF44431}' />
+    </window>
+    <window class='worksheet' name='Churn Ratio per country (chart view)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FDFFF9D7-56E3-47FC-BCE1-37C45FA1D046}' />
+    </window>
+    <window class='worksheet' name='Freq distribution for gender wise credit score '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{48D2DBD4-7CE7-408F-B561-6EF1F05DC6AB}' />
+    </window>
+    <window class='worksheet' name='Gender-wise estimated salary per country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:gender:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[sum:estimated_salary:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{370CB6CF-B4D5-498C-92C3-F651788544E2}' />
+    </window>
+    <window class='worksheet' name='Gender-wise estimated salary per country (chart distribution)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[none:country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{70FBC3F2-36DB-46C6-AFCC-C4496F573ACE}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Gender-wise estimated avg. salary per country (map view)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:estimated_salary:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{01569959-FA41-43B9-B669-C7140BC6E939}' />
+    </window>
+    <window class='worksheet' name='Gender wise avg. credit score and avg salary distribution per country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:estimated_salary:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:credit_score:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E7124322-E34A-4462-A0D2-F9C023CD85C6}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Country-wise average credut score per gender'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Customer Churn Distribution'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='average age distribution per gender category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{064E3854-155F-4FA9-B46D-AA28A43DD17A}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Freq distribution for gender wise credit score '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender wise avg. credit score and avg salary distribution per country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{F0796AF4-5CF7-4266-9D57-C69438C86B0C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Churn Ratio per country'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender wise avg. credit score and avg salary distribution per country'>
+          <zoom type='entire-view' />
+          <default-map-tool-selection tool='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{AD56A769-7C79-4A6B-8E5B-90B7C62D1E9A}' />
+    </window>
+    <window class='worksheet' name='Sheet 12'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:credit_score:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.00bnwow1cl4n5114h8pt70pfs5mb].[avg:balance:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{50C33C58-19ED-4D2B-90AD-6A2DF72FDD68}' />
+    </window>
+  </windows>
+</workbook>
