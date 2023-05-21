@@ -1,4 +1,4 @@
-## Premeir Leauge Club Data Analysis Project
+## Premeir League Club Data Analysis Project
 
 ### Project Learnings:
 - We analysed the Football clubs data from last 30 years.
