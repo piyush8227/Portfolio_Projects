@@ -1,9 +1,18 @@
-# Portfolio_Projects
+## **Data Science Salaries 2023 Analysis Project**
 
-1. [Premier League Club Investment Analysis project](https://github.com/piyush8227/Portfolio_Projects/tree/main/Premier-League-Club-Investment)
-2. [Diwali Sales Analysis Project](https://github.com/piyush8227/Portfolio_Projects/tree/main/Diwali%20Sales%20Data)
-3. [Madhav Ecommerce sales](https://github.com/piyush8227/Portfolio_Projects/tree/main/Madhav%20Ecommerce%20Sales)
-4. [Airbnb House renting data analysis project.](https://github.com/piyush8227/Portfolio_Projects/tree/main/Airbnb)
-5. [International Debt statistics](https://github.com/piyush8227/Portfolio_Projects/tree/main/Analyze_International_Debt_Statistics)
-6. [Banking Customer Churn Data Analysis Project](https://github.com/piyush8227/Portfolio_Projects/tree/main/Banking)
-7. [Gym Exercise analysis project](https://github.com/piyush8227/Portfolio_Projects/tree/main/Gym%20Data)
+### Project Learnings:
+* We performed analysis on Data Science Salary data collected from year 2020 to 2023.
+* The Data is from all over globe.
+* We can see that there is tremendous growth and demand for Data Science jobs in 2022. 
+* We can see that Senior Executive Level individuals are highly paid in Data Science.
+* Full time individuals are highly paid in Data Science.
+* Mid size companies have highly captured the Data Science job market with high salaries.
+* Data Scientist, Data Analyst, Data Engineer are the most common job titles in Data Science domain.
+
+## **Technologies used:**
+* Python | SQL | MySQL | Power BI | MS Excel
+
+
+## **Dashboard** 
+![Screenshot 2023-05-24 093840](https://github.com/piyush8227/Portfolio_Projects/assets/78916771/6bcbb016-47d4-47ac-bcef-bfbc1b93acd4)
+
