@@ -1,4 +1,4 @@
-# Portfolio_Projects
+# [Portfolio_Projects](https://github.com/piyush8227/Portfolio_Projects)
 
 1. [Titanic Survival Prediction](https://github.com/piyush8227/Portfolio_Projects/tree/main/Titanic%20Data%20Mini%20Project)
 2. [Data Science Salaries 2023 Analysis project](https://github.com/piyush8227/Portfolio_Projects/tree/main/Data%20Science%20Salaries%202023)
@@ -9,3 +9,4 @@
 7. [International Debt statistics](https://github.com/piyush8227/Portfolio_Projects/tree/main/Analyze_International_Debt_Statistics)
 8. [Banking Customer Churn Data Analysis Project](https://github.com/piyush8227/Portfolio_Projects/tree/main/Banking)
 9. [Gym Exercise analysis project](https://github.com/piyush8227/Portfolio_Projects/tree/main/Gym%20Data)
+10. [Loan Defaulter Systems](https://github.com/piyush8227/Portfolio_Projects/tree/main/Loan%20Defaulter%20System)
